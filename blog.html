@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-    <header>
-        <h1>Blog</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">gEE.</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <section class="blog">
+      <div class="blog-heading">
+        <h2>BLOG</h2>
+      </div>
 
-    <h2>Artikel-artkel</h2> 
-    <article>
-        <a href="artikel/blog1.html">
-            <h2>Menghadapi Tantangan dalam Dunia Game</h2>
-        </a>
-        <p>Meningkatkan Keterampilan dan Kreativitas</p>
+      <!-- blog container -->
+      <div class="blog-container">
+        <!-- blog 1 -->
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="galleryFoto/blog1.jpg" alt="" />
+          </div>
 
-        <hr>
+          <div class="blog-text">
+            <a href="artikel/blog1.html" class="blog-title"
+              >Menghadapi Tantangan dalam Dunia Game</a
+            >
+          </div>
+        </div>
 
-        <a href="artikel/blog2.html">
-            <h2>Menggali Potensi Edukasi dalam Dunia Game</h2>
-        </a>
-        <p>Membangun Pembelajaran yang Menyenangkan</p>
+        <!-- blog 2 -->
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="galleryFoto/blog2.jpg" alt="" />
+          </div>
 
-        <hr>
+          <div class="blog-text">
+            <a href="artikel/blog2.html" class="blog-title"
+              >Menggali Potensi Edukasi dalam Dunia Game</a
+            >
+          </div>
+        </div>
 
-        <a href="artikel/blog3.html">
-            <h2>Mengatasi Tantangan Mental melalui Terapi Game</h2>
-        </a>
-        <p>Membuka Pintu Menuju Kesehatan Jiwa yang Lebih Baik</p>
-    </article>
+        <!-- blog 3 -->
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="galleryFoto/blog3.jpg" alt="" />
+          </div>
 
-</body>
+          <div class="blog-text">
+            <a href="artikel/blog3.html" class="blog-title"
+              >Mengatasi Tantangan Mental melalui Terapi Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
