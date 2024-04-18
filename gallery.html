@@ -18,22 +18,28 @@
       </nav>
     </header>
 
-    <section class="gallery">
-      <h2>GALLERY</h2>
-
-      <div class="gallery-grid">
-        <div class="gallery-foto">
-          <img src="galleryFoto/foto1.jpg" />
-          <img src="galleryFoto/foto2.jpg" />
-          <img src="galleryFoto/foto3.jpg" />
-          <img src="galleryFoto/foto4.jpg" />
-          <img src="galleryFoto/foto5.jpg" />
-          <img src="galleryFoto/foto6.jpg" />
-          <img src="galleryFoto/foto7.jpg" />
-          <img src="galleryFoto/foto8.jpg" />
-          <img src="galleryFoto/foto9.jpg" />
-        </div>
+    <div class="gallery-container">
+      <div class="gallery-heading">
+        <h2>GALLERY</h2>
       </div>
-    </section>
+
+      <div class="full-img" id="fullImgBox">
+        <img src="galleryFoto/foto1.jpg" id="fullImg" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+
+      <div class="gallery-img">
+        <img src="galleryFoto/foto1.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto2.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto3.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto4.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto5.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto6.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto7.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto8.jpg" onclick="openFullImg(this.src)" />
+        <img src="galleryFoto/foto9.jpg" onclick="openFullImg(this.src)" />
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
